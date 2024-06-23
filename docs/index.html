@@ -95,7 +95,17 @@
         .skills-section {
             margin-top: 100px;
         }
-        .skills-section h3 {
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skills-category {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+        .skills-category h3 {
             font-size: 2em;
             font-weight: bold;
             margin: 20px 0 10px;
@@ -109,8 +119,15 @@
             font-size: 1em;
             color: #333;
         }
+        .skills-list ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
         .skills-list li strong {
             color: #000;
+        }
+        .skills-list li em {
+            font-style: italic;
         }
         .skills-section p {
             font-size: 1em;
@@ -145,6 +162,9 @@
                 text-decoration: none;
                 color: #333;
                 margin: 10px -50px;
+            }
+            .skills-container {
+                flex-direction: column;
             }
         }
     </style>
@@ -188,62 +208,87 @@
             <div class="education-skills-header">
                 <h2>Education and Skills</h2>
             </div>
-            <h3>Technical Skills</h3>
-            <ul class="skills-list">
-                <li><strong>Programming Languages</strong>
-            <ul>
-                <li>C# <em>(v12.0)</em></li>
-                <li>C++ <em>(v20)</em></li>
-                <li>Python <em>(v2.7.18)</em></li>
-                <li>R <em>(3.4.2)</em></li>
-            </ul>
-        </li>
-        <li><strong>Game Engines</strong>
-            <ul>
-                <li>Unreal Engine <em>(v5.3.2)</em></li>
-                <li>Unity <em>(v2021.3.0)</em></li>
-            </ul>
-        </li>
-        <li><strong>IDE</strong>
-            <ul>
-                <li>Visual Studio <em>(v2022)</em></li>
-            </ul>
-        </li>
-        <li style="margin-bottom: 30px;"><strong>Source Control Tools</strong> 
-        	<ul>
-        		<li>Git </li>
-                <li>GitHub </li>
-            </ul>
-        </li>
-        <li><strong>3D Modelling Engine</strong>
-            <ul>
-                <li>Blender <em>(v4.1.1)</em></li>
-                <li>Autodesk 3DS Max <em>(v2020)</em></li>
-            </ul>
-        </li>
-        <li style="margin-bottom: 30px;"><strong>Adobe Suite</strong>
-            <ul>
-                <li>Photoshop <em>(v25.9.1)</em></li>
-                <li>Illustrator <em>(v28.5)</em></li>
-                <li>Substance 3D Designer <em>(v13.1.2)</em></li>
-                <li>Substance Painter <em>(v10.0.1)</em></li>
-                <li>After Effects <em>(v24.5)</em></li>
-                <li>Premiere Pro <em>(v24.5)</em></li>
-                <li>Acrobat <em>(v24.1)</em></li>
-            </ul>
-        </li>
-        <li><strong>Methodologies</strong> Agile (Scrum, Kanban), OOP</li>
-                    </li>
-        <li style="margin-bottom: 30px;"><strong>Workload Management Platforms</strong> 
-        	Trello,  Miro, Notion
-                 
-        </li>
-        
-        <li><strong>Website Development</strong> HTML, CSS</li>
-        <li><strong>Microsoft Office</strong> Word, PowerPoint, Excel</li>
-                         
-            </ul>
-
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li>C# <em>(v12.0)</em></li>
+                        <li>C++ <em>(v20)</em></li>
+                        <li>Python <em>(v2.7.18)</em></li>
+                        <li>R <em>(3.4.2)</em></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Game Engines</h3>
+                    <ul class="skills-list">
+                        <li>Unreal Engine <em>(v5.3.2)</em></li>
+                        <li>Unity <em>(v2021.3.0)</em></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>IDEs</h3>
+                    <ul class="skills-list">
+                        <li>Visual Studio <em>(v2022)</em></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Source Control Tools</h3>
+                    <ul class="skills-list">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>3D Modelling Engine</h3>
+                    <ul class="skills-list">
+                        <li>Blender <em>(v4.1.1)</em></li>
+                        <li>Autodesk 3DS Max <em>(v2020)</em></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Adobe Suite</h3>
+                    <ul class="skills-list">
+                        <li>Photoshop <em>(v25.9.1)</em></li>
+                        <li>Illustrator <em>(v28.5)</em></li>
+                        <li>Substance 3D Designer <em>(v13.1.2)</em></li>
+                        <li>Substance Painter <em>(v10.0.1)</em></li>
+                        <li>After Effects <em>(v24.5)</em></li>
+                        <li>Premiere Pro <em>(v24.5)</em></li>
+                        <li>Acrobat <em>(v24.1)</em></li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Methodologies</h3>
+                    <ul class="skills-list">
+                        <li>Agile (Scrum, Kanban)</li>
+                        <li>OOP</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Workload Management Platforms</h3>
+                    <ul class="skills-list">
+                        <li>Trello</li>
+                        <li>Miro</li>
+                        <li>Notion</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Website Development</h3>
+                    <ul class="skills-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="skills-category">
+                    <h3>Microsoft Office</h3>
+                    <ul class="skills-list">
+                        <li>Word</li>
+                        <li>PowerPoint</li>
+                        <li>Excel</li>
+                    </ul>
+                </div>
+            </div>
+            
             <h3>Education</h3>
             <p style="margin-bottom: 30px;"><strong>Master of Science in Game Studies and Engineering</strong><br>Alpen-Adria Universitat Klagenfurt, Austria<br><em>Oct 2021 - Feb 2024</em><br>Master's thesis project: Exploring Betterment of User Interfaces in Video Games through Virtual Reality</p>
             <p><strong>Bachelor of Science (Hons) in Games Technology</strong><br>Coventry University, United Kingdom<br><em>Sep 2018 - May 2021</em><br>Dissertation project: Developing an Algorithm-Based Material Generation Workflow For Producing Realistic PBR Materials</p>
