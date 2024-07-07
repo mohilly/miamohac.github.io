@@ -4,170 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mia Mohac Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #101014;
-            color: white;
-        }
-        .header-left {
-            display: flex;
-            flex-direction: column;
-        }
-        .header-left h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        .header-left h2 {
-            margin: 0;
-            font-size: 1.5em;
-            font-weight: lighter;
-            color: #b4b4b4;
-        }
-        .header-right {
-            display: flex;
-            gap: 30px;
-        }
-        .header-right a {
-            font-size: 1em;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            text-transform: uppercase;
-        }
-        .container {
-            padding: 30px;
-            max-width: 1920px;
-            margin: 0px 100px;
-        }
-        .portfolio-header, .education-skills-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-        .portfolio-header h2, .education-skills-header h2 {
-            font-size: 6em;
-            font-weight: bold;
-            margin: 0;
-        }
-        .portfolio-header a, .education-skills-header a {
-            font-size: 1.5em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #333;
-            margin-left: auto;
-        }
-        .projects {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        .project {
-            width: 30%;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .project img {
-            width: 100%;
-            background-color: grey;
-            height: 300px;
-        }
-        .project h3 {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        .project p {
-            font-size: 0.9em;
-            color: #666;
-            text-align: justify;
-        }
-        .skills-section {
-            margin-top: 100px;
-        }
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .skills-category {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        .skills-category h3 {
-            font-size: 2em;
-            font-weight: bold;
-            margin: 20px 0 10px;
-        }
-        .skills-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li {
-            margin-bottom: 10px;
-            font-size: 1em;
-            color: #333;
-        }
-        .skills-list ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .skills-list li strong {
-            color: #000;
-        }
-        .skills-list li em {
-            font-style: italic;
-        }
-        .skills-section p {
-            font-size: 1em;
-            color: #333;
-            margin: 5px 0;
-        }
-
-        @media (max-width: 768px) {
-            .projects {
-                flex-direction: column;
-                align-items: center;
-                margin: 10px -50px;
-            }
-            .project {
-                width: 100%;
-            }
-            .portfolio-header, .education-skills-header {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
-            }
-            .portfolio-header h2, .education-skills-header h2 {
-                font-size: 5em;
-                margin: 10px -50px;
-            }
-            .portfolio-header a, .education-skills-header a {
-                font-size: 1.5em;
-                font-weight: bold;
-                text-decoration: none;
-                color: #333;
-                margin: 10px -50px;
-            }
-            .skills-container {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
     <header>
@@ -181,26 +18,40 @@
             <a href="#">Contact</a>
         </div>
     </header>
+
     <div class="container">
         <div class="portfolio-header">
-            <h2>Portfolio</h2>
+            <h2 class="fadein">Portfolio</h2>
+            <a href="#" class="more">More</a>
+        </div>
+        <div class="highlighted-portfolios">
+            <h3 class="heading-three">Highlighted projects</h3>
             <a href="#">More</a>
         </div>
         <div class="projects">
-            <div class="project">
-                <img src="placeholder1.jpg" alt="Project 1">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+                <img src="images/project1.avif" alt="Project Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Project Title</h2>
+                    <p class="card-description">This is a brief description of the project. It highlights the main features and purpose of the project.</p>
+                    <a href="#" class="card-button">Learn More</a>
+                </div>
             </div>
-            <div class="project">
-                <img src="placeholder2.jpg" alt="Project 2">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+                <img src="images/project2.webp" alt="Project Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Project Title</h2>
+                    <p class="card-description">This is a brief description of the project. It highlights the main features and purpose of the project.</p>
+                    <a href="#" class="card-button">Bok ja sam Mia</a>
+                </div>
             </div>
-            <div class="project">
-                <img src="placeholder3.jpg" alt="Project 3">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+                <img src="images/project3.jpeg" alt="Project Image" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Project Title</h2>
+                    <p class="card-description">This is a brief description of the project. It highlights the main features and purpose of the project.</p>
+                    <a href="#" class="card-button">Learn More</a>
+                </div>
             </div>
         </div>
         
@@ -275,8 +126,32 @@
                 <div class="skills-category">
                     <h3>Website Development</h3>
                     <ul class="skills-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <div class="skills-container">
+                            <div class="skill-button">
+                                <div class="logo-section">
+                                    <img src="images/skills/html5.jpg" alt="HTML Logo" class="skill-logo">
+                                </div>
+                                <div class="text-section">
+                                    <span class="skill-name">HTML</span>
+                                </div>
+                            </div>
+                            <div class="skill-button">
+                                <div class="logo-section">
+                                    <img src="images/css-logo.png" alt="CSS Logo" class="skill-logo">
+                                </div>
+                                <div class="text-section">
+                                    <span class="skill-name">CSS</span>
+                                </div>
+                            </div>
+                            <div class="skill-button">
+                                <div class="logo-section">
+                                    <img src="images/js-logo.png" alt="JavaScript Logo" class="skill-logo">
+                                </div>
+                                <div class="text-section">
+                                    <span class="skill-name">JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
                 <div class="skills-category">
