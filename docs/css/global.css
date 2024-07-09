@@ -56,7 +56,10 @@ header {
     font-weight: bold;
     margin: 0;
 }
-.portfolio-header a, .education-skills-header a {
+.highlighted-portfolios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: 1.5em;
     font-weight: bold;
     text-decoration: none;
@@ -64,13 +67,14 @@ header {
     margin-left: auto;
 }
 .highlighted-portfolios a {
-    display: flex;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
     color: #333;
     margin-left: auto;
 }
+
+
 .projects {
     display: flex;
     justify-content: space-between;
@@ -138,7 +142,7 @@ header {
     margin: 5px 0;
 }
 .heading-three{
-    font-size: 1.5em;
+    font-size: 1em;
     color: #BFBFBF;
 }
 
