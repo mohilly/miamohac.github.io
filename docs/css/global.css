@@ -40,9 +40,9 @@ header {
     text-transform: uppercase;
 }
 .container {
-    padding: 30px;
+    padding: 50px;
     max-width: 1920px;
-    margin: 0px 100px;
+    margin: 0px 7%;
 }
 .portfolio-header, .education-skills-header {
     display: flex;
@@ -143,7 +143,7 @@ header {
 }
 .heading-three{
     font-size: 1em;
-    color: #BFBFBF;
+    color: #333;
 }
 
 /* CARDS */
@@ -247,7 +247,68 @@ header {
     background: linear-gradient(135deg, #ffc4d6, #ff87ab);
 }
 
-/* KEYFRAMES */
+/* ////         EDUCATION          //// */
+
+.education-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    margin: 30px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, max-height 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.education-section:hover {
+    transform: scale(1.02);
+}
+
+.education-details {
+    width: 80%;
+}
+
+.university-name {
+    font-size: 1.8em;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.university-location,
+.time-frame,
+.degree {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #666;
+}
+
+.education-logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.education-section.expanded .additional-info {
+    max-height: 200px; /* Adjust according to the content size */
+    opacity: 1;
+}
+
+/*  ///         KEYFRAMES           ///     */
 
 @keyframes fadeIn {
     from {
