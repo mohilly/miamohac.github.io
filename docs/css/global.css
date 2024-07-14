@@ -6,6 +6,9 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -56,6 +59,32 @@ header {
     font-weight: bold;
     margin: 0;
 }
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* PORTFOLIO */
+
 .highlighted-portfolios {
     display: flex;
     align-items: center;
@@ -182,9 +211,11 @@ header {
     margin: 0 0 20px;
 }
 
+/*      FADE IN ANIMATION FOR THE HEADER OF EACH SECTION --> MADE REDUNTANT
 .fadein {
     animation: fadeIn 1s ease-in-out;
 }
+    */
 
 .card-button {
     display: inline-block;
@@ -340,13 +371,26 @@ header {
     box-sizing: border-box;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
     opacity: 0;
 }
 
 .education-section.expanded .additional-info {
     max-height: 500px; /* Adjust according to the content size */
     opacity: 1;
+}
+
+/*       SECTION ANIMATION FADE IN          */
+
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /*  ///         KEYFRAMES           ///     */
