@@ -393,6 +393,27 @@ header {
     transform: translateY(0);
 }
 
+/*       DARK MODE AND LIGHT MODE   <button id="theme-toggle" class="theme-toggle">Toggle Dark/Light Mode</button>       */
+/* Light Mode Variables */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --header-bg-color: #333;
+    --nav-link-color: #fff;
+    --nav-link-hover-color: #fff;
+    --section-bg-color: #fff;
+}
+
+/* Dark Mode Variables */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #fff;
+    --header-bg-color: #1e1e1e;
+    --nav-link-color: #ddd;
+    --nav-link-hover-color: #ddd;
+    --section-bg-color: #1e1e1e;
+}
+
 /*  ///         KEYFRAMES           ///     */
 
 @keyframes fadeIn {
