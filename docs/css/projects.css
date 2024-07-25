@@ -1,0 +1,27 @@
+/* projects.css */
+p {
+    text-align: justify; /* Ensure paragraphs are justified */
+}
+
+.image-container {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center; /* Center images within the container */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.split-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Gap between the two images */
+    margin: 20px 0;
+}
+
+.split-image-container img {
+    width: 100%;
+    height: auto;
+}
