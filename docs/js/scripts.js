@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Handle scroll fade-in effect
+    // Scroll fade-in and fade-out effect
     const sections = document.querySelectorAll('.section');
 
     const options = {
@@ -19,7 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Optional: Stop observing once the animation has been triggered
+            } else {
+                entry.target.classList.remove('visible');
             }
         });
     }, options);
