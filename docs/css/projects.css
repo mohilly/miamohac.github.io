@@ -10,13 +10,14 @@ p {
 }
 
 .image-container img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
 .split-image-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
     gap: 20px; /* Gap between the two images */
     margin: 20px 0;
 }
@@ -24,4 +25,9 @@ p {
 .split-image-container img {
     width: 100%;
     height: auto;
+}
+
+.split-image {
+    width: 50%;
+    text-align: center;
 }

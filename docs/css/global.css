@@ -59,6 +59,10 @@ header {
     font-weight: bold;
     margin: 0;
 }
+.site-title a {
+    color: #fff;
+    text-decoration: none; /* Remove underline */
+}
 
 .nav-link {
     color: #fff;
