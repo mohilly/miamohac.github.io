@@ -38,34 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('DOMContentLoaded', () => {
         console.log('DOM fully loaded and parsed');
-    
-        // Lightbox functionality
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const closeBtn = document.querySelector('.close');
-        const images = document.querySelectorAll('.clickable-image');
-    
-        console.log('Images found:', images.length);
-    
-        images.forEach(image => {
-            image.addEventListener('click', () => {
-                console.log('Image clicked:', image.src);
-                lightbox.style.display = 'block';
-                lightboxImg.src = image.src;
-            });
-        });
-    
-        closeBtn.addEventListener('click', () => {
-            console.log('Close button clicked');
-            lightbox.style.display = 'none';
-        });
-    
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                console.log('Lightbox background clicked');
-                lightbox.style.display = 'none';
-            }
-        });
     });
     
 });
