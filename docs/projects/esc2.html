@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 class="site-title"><a href="../index.html">Mia Mohac</a></h1>
+            <h2>Merging artistic vision with technical precision</h2>
+        </div>
+        <div class="header-right">
+            <a class="nav-link" href="#">Résumé</a>
+            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </header>
+
+    <div class="small-divider"></div>
+
+    <div class="container">
+        <div>
+            <div class="portfolio-header">
+                <h2>ESC 2</h2>
+            </div>
+            <div class="paragraph">
+                <p><a href="https://ironhidemakes.itch.io/esc-2" target="_blank">Play the Game</a></p>
+                <p>“Esc 2 - The ultimate escape challenge! You’re the Esc key, trapped on the office desk, battling against an army of keyboard keys. With each level, the enemies multiply, but fear not! Equip your fists with fire, ice, or lightning gloves and show them who’s boss. Clear levels to upgrade your abilities and become unstoppable. Play Esc 2, climb the leaderboards, and prove that you are the escapiest Esc key!”</p>
+                <p>Esc 2 is a dynamic action game developed for the ScoreSpace Jam #29 🕹️ (<a href="https://itch.io/jam/scorejam29/rate/2661196" target="_blank">Itchio Jam Score</a>), where the theme was "Escape." The game centres around the Esc key, who finds itself on an office desk, battling an army of keyboard keys. Each level intensifies as more enemies appear, challenging the player to become more strategic in their upgrades and combat techniques. The player can equip the Esc key with elemental fists—fire, ice, or lightning—to gain an advantage over the enemy keys. As levels progress, players can upgrade their abilities, striving to become the ultimate escape artist.</p>
+                <p>The main menu of "Esc 2," offers options to "Play Game," "Settings," "Credits," and "Leaderboards." Leaderboards was a necessary feature for this game jam. Players control the Esc key (using WASD to move), battling waves of enemy keys, including larger bosses like Enter and Space, requiring strategic thinking to progress.</p>
+                <p>Set on an office desk, the environment includes everyday 3D objects like calculators, staplers, and notepads, enhancing immersion. The HUD provides key information such as equipped weapons, total score, currency, and current round, allowing players to strategize effectively.</p>
+                <p>Players can upgrade their abilities through the in-game store, equipping elemental fists like Fire, Ice, and Lightning, and enhancing speed, health, and attack damage for deeper gameplay. Critical stats such as health and remaining enemies are displayed, ensuring players are always aware of their status.</p>
+            </div>
+        </div>
+
+        <div class="big-divider"></div>
+
+        <div class="image-container">
+            <a href="../images/project1.avif" data-fancybox="gallery">
+            <img src="../images/project1.avif" alt="Single Image" class="clickable-image">
+            </a>    
+        </div>
+
+        <div class="split-image-container">
+            <div class="split-image">
+                <a href="../images/placeholder.jpg" data-fancybox="gallery">
+                <img src="../images/placeholder.jpg" alt="First Image" class="clickable-image">
+                </a>
+            </div>
+            <div class="split-image">
+                <a href="../images/placeholder.jpg" data-fancybox="gallery">
+                <img src="../images/placeholder.jpg" alt="Second Image" class="clickable-image">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    </body>
+
+    <script  src="js/scripts.js">
+        $(document).ready(function() {
+          $('[data-fancybox="gallery"]').fancybox({
+            // Options can be added here
+          });
+        });
+      </script>
+</div>
+</body>
+</html>
