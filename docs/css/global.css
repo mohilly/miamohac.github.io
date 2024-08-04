@@ -363,6 +363,12 @@ header {
     background-color: transparent;
 }
 
+.medium-divider {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+
 .big-divider {
     width: 100%;
     height: 200px;

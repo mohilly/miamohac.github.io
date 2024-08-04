@@ -40,6 +40,13 @@ p {
     cursor: pointer;
 }
 
+/*         LIST         */
+
+.custom-list {
+    list-style-type: circle; /* Remove default list style */
+    padding-left: 40px; /* Add space for custom bullet */
+}
+
 /* Ensuring images show cursor pointer */
 .clickable-image {
     cursor: pointer;
