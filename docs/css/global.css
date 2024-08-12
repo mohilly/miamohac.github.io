@@ -29,6 +29,31 @@ header {
     margin: 0;
     font-size: 3em;
 }
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+    padding: 5px 0;
+    z-index: 1;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
 .header-left h2 {
     margin: 0;
     font-size: 1.5em;
@@ -68,28 +93,6 @@ header {
     text-decoration: none; /* Remove underline */
 }
 
-.nav-link {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    position: relative;
-    padding: 5px 0;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 3px;
-    background-color: #fff;
-    transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-    width: 100%;
-}
 
 /* PORTFOLIO */
 

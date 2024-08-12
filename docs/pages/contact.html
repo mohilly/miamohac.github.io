@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1 class="site-title"><a href="../index.html">Mia Mohac</a></h1>
+            <h2>Merging artistic vision with technical precision</h2>
+        </div>
+        <div class="header-right">
+            <a class="nav-link" href="#">Résumé</a>
+            <a class="nav-link" href="#">About me</a>
+            <a class="nav-link" href="#">Contact</a>
+        </div>
+    </header>
+
+    <div class="small-divider"></div>
+
+    <div class="container">
+        <div>
+            <div class="portfolio-header">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="paragraph">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel accumsan enim, ut rhoncus arcu. Mauris eget risus et erat accumsan molestie eu id lorem. Nunc sed commodo turpis, vel fermentum tortor. Aliquam erat volutpat. Fusce ullamcorper placerat leo, et interdum urna fringilla et. Nullam quis tortor nulla. Phasellus lobortis leo quis blandit venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus consectetur ornare ipsum, quis gravida elit hendrerit in. Maecenas quis nibh gravida, auctor ipsum eu, scelerisque ex. Mauris et aliquet erat. Proin ut augue eleifend, efficitur ligula id, finibus augue. Quisque ligula sapien, volutpat vitae ante ac, porttitor bibendum neque. Fusce feugiat interdum sapien vel tempus.</p>
+                <p>Aenean tempor lacus non consequat congue. Sed consectetur magna eu lorem pretium molestie. Cras molestie imperdiet ex, eget dignissim justo rutrum quis. Sed sit amet cursus neque. Ut sit amet turpis vel sem commodo suscipit ac a urna. Mauris dui neque, volutpat at imperdiet eget, feugiat vitae dui. Donec ultrices vehicula tincidunt. Cras varius rhoncus neque ac dictum.</p>
+                <p>Vestibulum placerat felis vel metus hendrerit blandit vel mollis sapien. Nunc iaculis id dolor eget finibus. Ut semper mauris leo, eu eleifend odio dapibus vitae. Maecenas sagittis eu velit nec semper. Donec ac erat orci. Nam blandit malesuada vulputate. Aliquam et dolor nec mi rhoncus dignissim. Quisque consectetur tellus ut varius efficitur. Maecenas sodales eros ac iaculis consectetur.</p>
+                <p>Nam nec nunc dignissim, congue metus eget, facilisis eros. Vestibulum pretium vulputate arcu, ac venenatis ante efficitur eu. Donec tincidunt justo sed sem pharetra dapibus. Vestibulum magna purus, pharetra eget lacus vitae, cursus fringilla tortor. Nulla at ullamcorper nisl. Vestibulum scelerisque, enim vel aliquet tempor, arcu felis vehicula arcu, eget accumsan lorem elit sit amet tortor. In sed finibus risus. Donec varius dolor sem, sed tincidunt elit viverra at. Sed nec dolor eget quam convallis imperdiet. Nulla vel nisl massa. Maecenas vestibulum in sem et mollis. Vestibulum sit amet condimentum ipsum.</p>
+            </div>
+        </div>
+
+        <div class="big-divider"></div>
+
+        <div class="image-container">
+            <a href="../images/project1.avif" data-fancybox="gallery">
+            <img src="../images/project1.avif" alt="Single Image" class="clickable-image">
+            </a>    
+        </div>
+
+        <div class="split-image-container">
+            <div class="split-image">
+                <a href="../images/placeholder.jpg" data-fancybox="gallery">
+                <img src="../images/placeholder.jpg" alt="First Image" class="clickable-image">
+                </a>
+            </div>
+            <div class="split-image">
+                <a href="../images/placeholder.jpg" data-fancybox="gallery">
+                <img src="../images/placeholder.jpg" alt="Second Image" class="clickable-image">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    </body>
+
+    <script  src="js/scripts.js">
+        $(document).ready(function() {
+          $('[data-fancybox="gallery"]').fancybox({
+            // Options can be added here
+          });
+        });
+      </script>
+</div>
+</body>
+</html>
