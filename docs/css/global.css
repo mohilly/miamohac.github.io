@@ -114,7 +114,6 @@ header {
     margin-left: auto;
 }
 
-
 .projects {
     display: flex;
     justify-content: space-between;
@@ -264,7 +263,6 @@ header {
     transition: transform 0.3s ease;
 }
 
-
 .skills-heading {
     font-size: 1.5em;
     margin-bottom: 20px;
@@ -410,6 +408,36 @@ header {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ABOUT ME / SETTINGS */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: safe center;
+    margin-top: 40px;
+    margin-right: 0px;
+    margin-left: 180px;
+}
+
+.image-container {
+    margin-top: 500px;
+    width: 35%;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    text-align: justify;
+    line-height: 1.45;
+    width: 100%;
+    padding-right: 50px;
+}
+
 
 /*       DARK MODE AND LIGHT MODE   <button id="theme-toggle" class="theme-toggle">Toggle Dark/Light Mode</button>       */
 /* Light Mode Variables */
