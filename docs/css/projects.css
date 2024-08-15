@@ -4,14 +4,21 @@ p {
     line-height: 1.45;
 }
 
+.project-container {
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Optional: Center align text and inline elements within the container */
+}
+
 .image-container {
     width: 100%;
     margin: 20px 0;
     text-align: center; /* Center images within the container */
 }
 
-.image-container img {
-    width: 70%;
+.image-container-projekti img {
+    width: 100%;
     height: auto;
 }
 
