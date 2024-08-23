@@ -413,19 +413,19 @@ header {
 .content-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: safe center;
-    margin-top: 40px;
+    align-items: center;
+    margin-top: 0px;
     margin-right: 0px;
-    margin-left: 180px;
+    margin-left: 0px;
 }
 
-.image-container {
-    margin-top: 500px;
+.image-container-about {
+    margin-top: 50px;
     width: 35%;
     margin-bottom: 20px;
 }
 
-.image-container img {
+.image-container-about img {
     width: 100%;
     height: auto;
     display: block;
